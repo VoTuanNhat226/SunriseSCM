@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseNonSidebar" template="/WEB-INF/layout/base_non_sidebar.jsp">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="content" value=""/>
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
+        <put-attribute name="preloading" value="/WEB-INF/layout/preloading.jsp"/>
+    </definition>
+
+    <!--Đăng nhập-->
+    <definition name="login" template="/WEB-INF/pages/login.jsp"/>
+
+    <!--Trang chủ-->
+    <definition name="dashboard" extends="baseNonSidebar">
+        <put-attribute name="title" value="Trang chủ"/>
+        <put-attribute name="content" value="/WEB-INF/pages/dashboard.jsp"/>
+    </definition>
+
+    <!--Thống kê-->
+    <definition name="statistics" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thống kê"/>
+        <put-attribute name="content" value="/WEB-INF/pages/statistics.jsp"/>
+    </definition>
+
+    <!--Thống kê hiệu suất nhà cung cấp-->
+    <definition name="statistics_performance" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thống kê hiệu suất nhà cung cấp"/>
+        <put-attribute name="content" value="/WEB-INF/pages/statistics_performance.jsp"/>
+    </definition>
+
+    <!--Thống kê doanh thu-->
+    <definition name="statistics_revenue" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thống kê doanh thu"/>
+        <put-attribute name="content" value="/WEB-INF/pages/statistics_revenue.jsp"/>
+    </definition>
+
+    <!--Báo cáo tồn kho-->
+    <definition name="statistics_inventory" extends="baseNonSidebar">
+        <put-attribute name="title" value="Báo cáo tồn kho"/>
+        <put-attribute name="content" value="/WEB-INF/pages/statistics_inventory.jsp"/>
+    </definition>
+
+    <!--Category-->
+    <definition name="categories" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách danh mục"/>
+        <put-attribute name="content" value="/WEB-INF/pages/category/categories.jsp"/>
+    </definition>
+
+    <definition name="add_category" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm danh mục"/>
+        <put-attribute name="content" value="/WEB-INF/pages/category/add_category.jsp"/>
+    </definition>
+
+    <definition name="edit_category" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa danh mục"/>
+        <put-attribute name="content" value="/WEB-INF/pages/category/edit_category.jsp"/>
+    </definition>
+
+    <!--Customer-->
+    <definition name="customers" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách khách hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/customer/customers.jsp"/>
+    </definition>
+
+    <definition name="add_customer" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm khách hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/customer/add_customer.jsp"/>
+    </definition>
+
+    <definition name="edit_customer" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa khách hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/customer/edit_customer.jsp"/>
+    </definition>
+
+    <!--Delivery Schedules-->
+    <definition name="delivery_schedules" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách lịch giao hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/delivery_schedule/delivery_schedules.jsp"/>
+    </definition>
+
+    <definition name="add_delivery_schedule" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm lịch giao hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/delivery_schedule/add_delivery_schedule.jsp"/>
+    </definition>
+
+    <definition name="edit_delivery_schedule" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa lịch giao hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/delivery_schedule/edit_delivery_schedule.jsp"/>
+    </definition>
+
+    <!--Inventory-->
+    <definition name="inventories" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách tồn kho"/>
+        <put-attribute name="content" value="/WEB-INF/pages/inventory/inventories.jsp"/>
+    </definition>
+
+    <definition name="add_inventory" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm tồn kho"/>
+        <put-attribute name="content" value="/WEB-INF/pages/inventory/add_inventory.jsp"/>
+    </definition>
+
+    <definition name="edit_inventory" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa tồn kho"/>
+        <put-attribute name="content" value="/WEB-INF/pages/inventory/edit_inventory.jsp"/>
+    </definition>
+
+    <!--Invoice-->
+    <definition name="invoices" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách hóa đơn"/>
+        <put-attribute name="content" value="/WEB-INF/pages/invoice/invoices.jsp"/>
+    </definition>
+
+    <definition name="edit_invoice" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa hóa đơn"/>
+        <put-attribute name="content" value="/WEB-INF/pages/invoice/edit_invoice.jsp"/>
+    </definition>
+
+    <!--Order-->
+    <definition name="orders" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách đơn hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/order/orders.jsp"/>
+    </definition>
+
+    <definition name="add_order" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm đơn hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/order/add_order.jsp"/>
+    </definition>
+
+    <definition name="edit_order" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa đơn hàng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/order/edit_order.jsp"/>
+    </definition>
+
+    <!--Payment Terms-->
+    <definition name="payment_terms" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách phương thức thanh toán"/>
+        <put-attribute name="content" value="/WEB-INF/pages/payment_term/payment_terms.jsp"/>
+    </definition>
+
+    <definition name="add_payment_terms" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm phương thức thanh toán"/>
+        <put-attribute name="content" value="/WEB-INF/pages/payment_term/add_payment_term.jsp"/>
+    </definition>
+
+    <definition name="edit_payment_terms" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa phương thức thanh toán"/>
+        <put-attribute name="content" value="/WEB-INF/pages/payment_term/edit_payment_term.jsp"/>
+    </definition>
+
+    <!--Products-->
+    <definition name="products" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách sản phẩm"/>
+        <put-attribute name="content" value="/WEB-INF/pages/product/products.jsp"/>
+    </definition>
+
+    <definition name="add_product" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm sản phẩm"/>
+        <put-attribute name="content" value="/WEB-INF/pages/product/add_product.jsp"/>
+    </definition>
+
+    <definition name="edit_product" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa sản phẩm"/>
+        <put-attribute name="content" value="/WEB-INF/pages/product/edit_product.jsp"/>
+    </definition>
+
+    <!--Rating-->
+    <definition name="ratings" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách đánh giá"/>
+        <put-attribute name="content" value="/WEB-INF/pages/rating/ratings.jsp"/>
+    </definition>
+
+    <definition name="add_rating" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm đánh giá"/>
+        <put-attribute name="content" value="/WEB-INF/pages/rating/add_rating.jsp"/>
+    </definition>
+
+    <definition name="edit_rating" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa đánh giá"/>
+        <put-attribute name="content" value="/WEB-INF/pages/rating/edit_rating.jsp"/>
+    </definition>
+
+    <!--Shipment-->
+    <definition name="shipments" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách đơn vận chuyển"/>
+        <put-attribute name="content" value="/WEB-INF/pages/shipment/shipments.jsp"/>
+    </definition>
+
+    <definition name="add_shipment" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm đơn vận chuyển"/>
+        <put-attribute name="content" value="/WEB-INF/pages/shipment/add_shipment.jsp"/>
+    </definition>
+
+    <definition name="edit_shipment" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa đơn vận chuyển"/>
+        <put-attribute name="content" value="/WEB-INF/pages/shipment/edit_shipment.jsp"/>
+    </definition>
+
+    <!--Shipper-->
+    <definition name="shippers" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách nhà vận chuyển"/>
+        <put-attribute name="content" value="/WEB-INF/pages/shipper/shippers.jsp"/>
+    </definition>
+
+    <definition name="add_shipper" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm nhà vận chuyển"/>
+        <put-attribute name="content" value="/WEB-INF/pages/shipper/add_shipper.jsp"/>
+    </definition>
+
+    <definition name="edit_shipper" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa nhà vận chuyển"/>
+        <put-attribute name="content" value="/WEB-INF/pages/shipper/edit_shipper.jsp"/>
+    </definition>
+
+    <!--Supplier-->
+    <definition name="suppliers" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách nhà cung cấp"/>
+        <put-attribute name="content" value="/WEB-INF/pages/supplier/suppliers.jsp"/>
+    </definition>
+
+    <definition name="add_supplier" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm nhà cung cấp"/>
+        <put-attribute name="content" value="/WEB-INF/pages/supplier/add_supplier.jsp"/>
+    </definition>
+
+    <definition name="edit_supplier" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa nhà cung cấp"/>
+        <put-attribute name="content" value="/WEB-INF/pages/supplier/edit_supplier.jsp"/>
+    </definition>
+
+    <!--Tag-->
+    <definition name="tags" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách nhãn"/>
+        <put-attribute name="content" value="/WEB-INF/pages/tag/tags.jsp"/>
+    </definition>
+
+    <definition name="add_tag" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm nhãn"/>
+        <put-attribute name="content" value="/WEB-INF/pages/tag/add_tag.jsp"/>
+    </definition>
+
+    <definition name="edit_tag" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa nhãn"/>
+        <put-attribute name="content" value="/WEB-INF/pages/tag/edit_tag.jsp"/>
+    </definition>
+
+    <!--Tax-->
+    <definition name="taxes" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách thuế"/>
+        <put-attribute name="content" value="/WEB-INF/pages/tax/taxes.jsp"/>
+    </definition>
+
+    <definition name="add_tax" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm thuế"/>
+        <put-attribute name="content" value="/WEB-INF/pages/tax/add_tax.jsp"/>
+    </definition>
+
+    <definition name="edit_tax" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa thuế"/>
+        <put-attribute name="content" value="/WEB-INF/pages/tax/edit_tax.jsp"/>
+    </definition>
+
+    <!--Unit-->
+    <definition name="units" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách đơn vị sản phẩm"/>
+        <put-attribute name="content" value="/WEB-INF/pages/unit/units.jsp"/>
+    </definition>
+
+    <definition name="add_unit" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm đơn vị sản phẩm"/>
+        <put-attribute name="content" value="/WEB-INF/pages/unit/add_unit.jsp"/>
+    </definition>
+
+    <definition name="edit_unit" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa đơn vị sản phẩm"/>
+        <put-attribute name="content" value="/WEB-INF/pages/unit/edit_unit.jsp"/>
+    </definition>
+
+    <!--User-->
+    <definition name="users" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách người dùng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/user/users.jsp"/>
+    </definition>
+
+    <definition name="edit_user" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa người dùng"/>
+        <put-attribute name="content" value="/WEB-INF/pages/user/edit_user.jsp"/>
+    </definition>
+
+    <!--Warehouse-->
+    <definition name="warehouses" extends="baseNonSidebar">
+        <put-attribute name="title" value="Danh sách nhà kho"/>
+        <put-attribute name="content" value="/WEB-INF/pages/warehouse/warehouses.jsp"/>
+    </definition>
+
+    <definition name="add_warehouse" extends="baseNonSidebar">
+        <put-attribute name="title" value="Thêm nhà kho"/>
+        <put-attribute name="content" value="/WEB-INF/pages/warehouse/add_warehouse.jsp"/>
+    </definition>
+
+    <definition name="edit_warehouse" extends="baseNonSidebar">
+        <put-attribute name="title" value="Chỉnh sửa nhà kho"/>
+        <put-attribute name="content" value="/WEB-INF/pages/warehouse/edit_warehouse.jsp"/>
+    </definition>
+</tiles-definitions>

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: var(--color-background);
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--color-dark);
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-style: none !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.bx {
+    line-height: 0 !important;
+}
+
+/* Popover */
+.popover {
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.popover-header {
+    font-size: 1.1rem !important;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.4),
+    0 0 40px rgba(255, 255, 255, 0.2);
+    border-bottom: 0 none transparent;
+}
+
+#popoverTotalAmount .popover-header {
+    background-color: var(--color-chart1-bold);
+}
+
+#popoverOrders .popover-header {
+    background-color: var(--color-chart2-bold);
+}
+
+#popoverProducts .popover-header {
+    background-color: var(--color-chart3-bold);
+}
+
+.popover-body {
+    color: #ffffff;
+    font-size: 1.2rem !important;
+}
+
+#popoverTotalAmount .popover {
+    background-color: var(--color-chart1);
+}
+
+#popoverOrders .popover {
+    background-color: var(--color-chart2);
+}
+
+#popoverProducts .popover {
+    background-color: var(--color-chart3);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.selected-item {
+    font-weight: bold;
+    background-color: #88a6c3 !important;
+}
+
+.table {
+    overflow: hidden;
+    border-width: 0;
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--color-white);
+}
+
+.table tbody tr:hover {
+    background-color: #f6f6f9;
+}
+
+.table tbody th {
+    font-weight: normal;
+}
+
+table.dataTable th,
+table.dataTable td {
+    padding: 20px !important;
+}
+
+.dataTables_length,
+.dataTables_filter {
+    margin-bottom: 20px;
+}
+
+.dataTables_info,
+.dataTables_paginate.paging_simple_numbers {
+    margin-top: 20px;
+}
+
+.table.dataTable.no-footer {
+    border-bottom: 0 solid transparent !important;
+}
+
+#orderDetailsTable td:nth-child(3),
+#orderDetailsTable th:nth-child(3) {
+    text-align: center;
+}
+
+/* Glow */
+.glow {
+    font-size: larger;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.4),
+    0 0 40px rgba(255, 255, 255, 0.2);
+}
+
+/* List */
+.list {
+    margin-top: 50px;
+}
+
+.list .list__title {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
+.list__icon-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.list__icon-add:hover {
+    background: var(--background);
+    color: var(--text-color-white);
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-bottom: 0 !important;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* All input */
+.form-group {
+    margin-bottom: -20px;
+}
+
+form input[type="numberDecimal"],
+form input[type="email"],
+form input[type="password"],
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+form input[type="numberDecimal"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="text"]:focus,
+form input[type="tel"]:focus,
+form input[type="date"]:focus {
+    border-color: var(--hover-color);
+    outline: none;
+}
+
+/* Input Gender */
+.gender-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.gender-group label {
+    margin-right: 5px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Submit button */
+form input[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #198754;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    align-self: center;
+}
+
+form input[type="submit"]:hover {
+    background-color: #198754;
+}
+
+
+/*Input option*/
+form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+form select:focus {
+    border-color: var(--hover-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 125, 219, 0.2);
+}
