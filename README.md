@@ -1,3 +1,1 @@
-# BE-Supply-Chain-Management
-
-Backend for Supply Chain Management Website
+<h1>SUNRISE SUPPLY CHAIN MANAGEMENT SYSTEM</h1>
