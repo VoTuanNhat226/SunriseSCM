@@ -19,7 +19,7 @@
             <th>Lần cuối đăng nhập</th>
             <th>Ngày tạo</th>
             <th>Ngày cập nhập</th>
-            <th>Hành động</th>
+            <th>Chức năng</th>
         </tr>
         </thead>
         <tbody>
@@ -30,10 +30,10 @@
                 <td>${user.userRole.getDisplayName()}</td>
                 <td>
                     <c:if test="${ user.confirm == true }">
-                        <span class="badge bg-success">Đã xác thực</span>
+                        <span>Đã xác thực</span>
                     </c:if>
                     <c:if test="${ user.confirm == false }">
-                        <span class="badge bg-danger">Chưa xác thực</span>
+                        <span>Chưa xác thực</span>
                     </c:if>
                 </td>
                 <td>
@@ -59,13 +59,13 @@
                     </c:if>
                 </td>
                 <td>
-                    <a class="btn btn-primary btn-sm" href="<c:url value="/admin/users/edit/${user.id}"/>">
-                        <i class='bx bxs-edit'></i>
+                    <a class="btn btn-success btn-sm" href="<c:url value="/admin/users/edit/${user.id}"/>">
+                        <i class='bx'>Sửa</i>
                     </a>
 
                     <c:url value="/admin/users/delete/${user.id}" var="deleteCustomer"/>
                     <button class="btn btn-danger btn-sm" onclick="deleteItem('${deleteCustomer}', ${user.id})">
-                        <i class='bx bx-x'></i>
+                        <i class='bx'>Xóa</i>
                     </button>
                 </td>
             </tr>

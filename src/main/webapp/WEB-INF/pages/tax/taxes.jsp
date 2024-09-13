@@ -5,7 +5,7 @@
 <div class="container list">
     <div class="d-flex justify-content-between align-items-center">
         <h1 class="text-center list__title">DANH SÁCH THUẾ</h1>
-        <a href="<c:url value="/admin/taxs/add"/>" class="list__icon-add">
+        <a href="<c:url value="/admin/taxes/add"/>" class="list__icon-add">
             <i class='bx bxs-plus-circle'></i>
         </a>
     </div>

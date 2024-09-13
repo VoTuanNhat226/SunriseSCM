@@ -18,8 +18,9 @@
             <th>ID</th>
             <th>Tên</th>
             <th>Giá</th>
-            <th>Đơn vị</th>
+            <!--<th>Đơn vị</th>-->
             <th>Danh mục</th>
+            <th>Nhà cung cấp</th>
             <th>Ngày hết hạn</th>
             <th>Ngày tạo</th>
             <th>Ngày cập nhập</th>
@@ -32,8 +33,9 @@
                 <td>${product.id}</td>
                 <td>${product.name}</td>
                 <td>${String.format("%,.3f", product.price)} VNĐ</td>
-                <td>${product.unit.name}</td>
+                <!--<td>${product.unit.name}</td>-->
                 <td>${product.category.name}</td>
+                <td>${product.supplier.name}</td>
                 <td>
                     <fmt:parseDate value="${ product.expiryDate }" pattern="yyyy-MM-dd" var="parsedDateTime" type="date"/>
                     <fmt:formatDate pattern="dd-MM-yyyy" value="${ parsedDateTime }"/>

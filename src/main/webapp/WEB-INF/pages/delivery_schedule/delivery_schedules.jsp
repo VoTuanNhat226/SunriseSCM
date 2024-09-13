@@ -4,7 +4,7 @@
 
 <div class="container list">
     <div class="d-flex justify-content-between align-items-center">
-        <h1 class="text-center list__title">DANH SÁNG LỊCH GIAO HÀNG</h1>
+        <h1 class="text-center list__title">DANH SÁCH LỊCH GIAO HÀNG</h1>
         <a href="<c:url value="/admin/schedules/add"/>" class="list__icon-add">
             <i class='bx bxs-plus-circle'></i>
         </a>

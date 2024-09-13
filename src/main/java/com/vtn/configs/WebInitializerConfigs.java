@@ -17,19 +17,7 @@ public class WebInitializerConfigs {
         if (!this.globalService.isFirstRun()) {
             return;
         }
-
-        this.globalService.createCategory();
-        this.globalService.createTag();
-        this.globalService.createUnit();
-        this.globalService.createTax();
-        this.globalService.createWarehouse();
-        this.globalService.createUser();
-        this.globalService.createProduct();
-        this.globalService.createInventory();
-        this.globalService.createRating();
-        this.globalService.createOrder();
-        this.globalService.createDeliverySchedule();
-
+       
         this.globalService.saveFirstRun();
     }
 }
